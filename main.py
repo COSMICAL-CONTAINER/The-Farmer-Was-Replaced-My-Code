@@ -148,17 +148,17 @@ while num_unlocked(Unlocks.Leaderboard) == 0:
 	
 		unlock(Unlocks.Expand)
 		unlock(Unlocks.Plant)
-		all_plant_Hay_untill(10000)
+		all_plant_Hay_until(10000)
 		
 	# 解锁胡萝卜
 	while num_unlocked(Unlocks.Carrots) == 0:
 		unlock(Unlocks.Expand)
 		unlock(Unlocks.Speed)
 		unlock(Unlocks.Carrots)
-		all_plant_Bush_untill(10000)
+		all_plant_Bush_until(10000)
 			
-	all_plant_Hay_untill(10000)
-	all_plant_Bush_untill(10000)
+	all_plant_Hay_until(10000)
+	all_plant_Bush_until(10000)
 	# 解锁 肥料 浇水 树木
 	while num_unlocked(Unlocks.Trees) == 0:
 		unlock(Unlocks.Expand)
@@ -171,8 +171,8 @@ while num_unlocked(Unlocks.Leaderboard) == 0:
 				move(North)
 			move(East)
 			
-	all_plant_Hay_untill(50000)
-	all_plant_Bush_untill(50000)
+	all_plant_Hay_until(50000)
+	all_plant_Bush_until(50000)
 	# 解锁南瓜
 	while num_unlocked(Unlocks.Pumpkins) == 0:
 		unlock(Unlocks.Expand)
@@ -183,7 +183,7 @@ while num_unlocked(Unlocks.Leaderboard) == 0:
 		unlock(Unlocks.Trees)
 		unlock(Unlocks.Sunflowers)
 		unlock(Unlocks.Pumpkins)
-		all_plant_Carrot_untill(10000)
+		all_plant_Carrot_until(10000)
 		
 	# 解锁 混合种植 仙人掌
 	while num_unlocked(Unlocks.Polyculture) == 0:
@@ -197,7 +197,7 @@ while num_unlocked(Unlocks.Leaderboard) == 0:
 		unlock(Unlocks.Pumpkins)
 		unlock(Unlocks.Cactus)
 		unlock(Unlocks.Polyculture)
-		all_plant_Pumpkin_untill(150000)
+		all_plant_Pumpkin_until(150000)
 		
 	# 解锁恐龙
 	while num_unlocked(Unlocks.Dinosaurs) == 0:
@@ -214,12 +214,12 @@ while num_unlocked(Unlocks.Leaderboard) == 0:
 		unlock(Unlocks.Polyculture)
 		unlock(Unlocks.Dinosaurs)
 		unlock(Unlocks.Mazes)
-		all_plant_Cactus_untill(40000)
+		all_plant_Cactus_until(40000)
 	
 	# 走恐龙路径
 	while num_items(Items.Bone) < 2000000:
 		if num_items(Items.Cactus) < 20000:
-			all_plant_Cactus_untill(20000)
+			all_plant_Cactus_until(20000)
 		clear()
 		def_Dinosaur()
 		
